@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4fc;
+  color: #1a2a6c;
+}
+
+header {
+  background-color: #1a2a6c;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.estudiante {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.texto h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1a2a6c;
+}
+
+.texto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.texto li {
+  margin-bottom: 10px;
+}
+footer a {
+  color: #4da3ff;       /* azul bonito */
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #ffffff;       /* cambia a blanco al pasar el mouse */
+}
+
+
+.foto {
+  width: 150px;
+  height: 180px;
+  border: 2px dashed #1a2a6c;
+  background-color: #e0eafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1a2a6c;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #1a2a6c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
