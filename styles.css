@@ -3,8 +3,12 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f4fc;
   color: #1a2a6c;
+  min-height: 100vh;              /* asegura que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
 }
 
+/* Encabezado */
 header {
   background-color: #1a2a6c;
   color: white;
@@ -22,51 +26,63 @@ header h1 {
   font-size: 18px;
 }
 
+/* Contenido principal */
 main {
+  flex: 1;                        /* empuja el footer hacia abajo */
   padding: 40px 20px;
 }
 
-.contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.texto {
-  flex: 1;
-  min-width: 250px;
-}
-
-.texto h2 {
-  font-size: 22px;
-  margin-bottom: 15px;
+/* Título de prácticas */
+.titulo-practicas {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 25px;
   color: #1a2a6c;
 }
 
-.texto ul {
+/* Contenedor de botones y foto */
+.contenedor-practicas {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 40px;
+  gap: 20px;
+}
+
+/* Botones en lista vertical */
+.lista-botones {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.texto li {
-  margin-bottom: 10px;
-}
-footer a {
-  color: #4da3ff;       /* azul bonito */
-  text-decoration: underline;
-  cursor: pointer;
+.lista-botones li {
+  margin-bottom: 12px;
 }
 
-footer a:hover {
-  color: #ffffff;       /* cambia a blanco al pasar el mouse */
+.btn {
+  display: block;
+  padding: 10px 18px;
+  background-color: #1a2a6c;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #1a2a6c; /* borde más fino */
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+.btn:hover {
+  background-color: #4da3ff;
+  border-color: #4da3ff;
+}
 
+/* Cuadro de foto más a la derecha y arriba */
 .foto {
-  width: 150px;
-  height: 180px;
+  width: 180px;
+  height: 220px;
   border: 2px dashed #1a2a6c;
   background-color: #e0eafc;
   display: flex;
@@ -74,12 +90,27 @@ footer a:hover {
   justify-content: center;
   color: #1a2a6c;
   font-size: 14px;
+  margin-left: auto;   /* empuja al extremo derecho */
+  margin-top: -10px;   /* lo sube un poco más arriba */
 }
 
+/* Footer */
 footer {
   background-color: #1a2a6c;
   color: white;
   text-align: center;
   padding: 20px;
   font-size: 14px;
+  margin-top: 30px;   /* solo un poquito abajo del cuadro */
 }
+
+footer a {
+  color: #4da3ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
