@@ -1,0 +1,15 @@
+{
+  "lugar": "Salar de Uyuni",
+  "ubicacion": "Potosí, Bolivia",
+  "descripcion": "El salar más grande del mundo, famoso por su efecto espejo.",
+  "actividades": [
+    "Tour en 4x4",
+    "Fotografía",
+    "Visita a Isla Incahuasi"
+  ],
+  "precioEntrada": 30,
+  "horarios": {
+    "lunes-viernes": "08:00 - 17:00",
+    "sabado-domingo": "07:00 - 18:00"
+  }
+}
